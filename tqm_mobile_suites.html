@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TQM Mobile Suites | Luxury 3-Stall Shower & Restroom Trailer Rental Dallas-Fort Worth</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              500: '#0284c7',
+              600: '#0369a1',
+              700: '#075985',
+              800: '#0c4a6e',
+              900: '#082f49',
+            },
+            accent: {
+              500: '#0d9488',
+              600: '#0f766e',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    /* Custom subtle styling */
+    .glass-card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(8px);
+    }
+    .hero-pattern {
+      background-color: #0c4a6e;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="bg-slate-900 text-slate-200 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1.5 animate-pulse"></span>
+          Now Booking 2026/2027 Dates
+        </span>
+        <span class="text-slate-300">Serving Dallas, Fort Worth, Frisco, Plano, Arlington & Surrounding DFW</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs font-medium">
+        <a href="tel:2145557469" class="hover:text-white flex items-center gap-1 transition">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-brand-400"></i> (214) 555-SHOW (7469)
+        </a>
+        <span class="text-slate-600">|</span>
+        <span class="text-slate-300 flex items-center gap-1">
+          <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-400"></i> Fully Insured & Commercial Permitted
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-brand-800 to-brand-600 flex items-center justify-center text-white shadow-md shadow-brand-900/10 group-hover:scale-105 transition">
+            <i data-lucide="droplet" class="w-6 h-6 text-brand-200"></i>
+          </div>
+          <div>
+            <span class="text-xl font-extrabold tracking-tight text-slate-900 flex items-center gap-1.5">
+              TQM MOBILE <span class="text-brand-600">SUITES</span>
+            </span>
+            <span class="block text-xs uppercase tracking-wider text-slate-500 font-semibold">3-Stall Shower & Restroom Trailer</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+          <a href="#suites" class="hover:text-brand-600 transition">Trailer Specs</a>
+          <a href="#use-cases" class="hover:text-brand-600 transition">Markets & Events</a>
+          <a href="#calculator" class="hover:text-brand-600 transition">Price Estimator</a>
+          <a href="#faq" class="hover:text-brand-600 transition">FAQ</a>
+          <a href="#service-area" class="hover:text-brand-600 transition">Coverage</a>
+        </nav>
+
+        <!-- CTA Buttons -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="tel:2145557469" class="p-2.5 rounded-lg text-slate-700 hover:text-brand-600 hover:bg-slate-100 transition" title="Call directly">
+            <i data-lucide="phone-call" class="w-5 h-5"></i>
+          </a>
+          <a href="#quote-form" class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-bold text-sm text-white bg-brand-600 hover:bg-brand-700 shadow-md shadow-brand-600/25 transition active:scale-95">
+            Reserve Dates
+            <i data-lucide="arrow-right" class="w-4 h-4 ml-1.5"></i>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100" aria-label="Toggle menu">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden md:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-3">
+      <a href="#suites" class="block py-2 text-base font-semibold text-slate-700 hover:text-brand-600">Trailer Specs</a>
+      <a href="#use-cases" class="block py-2 text-base font-semibold text-slate-700 hover:text-brand-600">Markets & Events</a>
+      <a href="#calculator" class="block py-2 text-base font-semibold text-slate-700 hover:text-brand-600">Price Estimator</a>
+      <a href="#faq" class="block py-2 text-base font-semibold text-slate-700 hover:text-brand-600">FAQ</a>
+      <a href="#service-area" class="block py-2 text-base font-semibold text-slate-700 hover:text-brand-600">Service Area</a>
+      <div class="pt-3 border-t border-slate-100 flex flex-col gap-2">
+        <a href="tel:2145557469" class="w-full text-center py-2.5 rounded-lg border border-slate-300 font-semibold text-slate-800">Call (214) 555-7469</a>
+        <a href="#quote-form" class="w-full text-center py-2.5 rounded-lg bg-brand-600 font-semibold text-white shadow">Get Instant Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="relative hero-pattern text-white overflow-hidden py-16 lg:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs sm:text-sm font-medium text-brand-100">
+              <i data-lucide="map-pin" class="w-4 h-4 text-emerald-400"></i>
+              Delivered & Set Up Across Dallas-Fort Worth & North Texas
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.15]">
+              Commercial Grade Power. <br>
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 via-teal-200 to-emerald-300">
+                Five-Star Luxury Comfort.
+              </span>
+            </h1>
+
+            <p class="text-lg sm:text-xl text-slate-200 font-normal leading-relaxed max-w-2xl">
+              Turnkey 3-suite mobile shower & restroom trailer. Every suite features its own <strong>continuous hot shower, private flushing commode, vanity, and individual cold AC / heating</strong>.
+            </p>
+
+            <!-- Key Metric Chips -->
+            <div class="grid grid-cols-3 gap-3 pt-2 max-w-lg">
+              <div class="bg-white/10 backdrop-blur rounded-xl p-3 border border-white/10 text-center">
+                <span class="block text-2xl sm:text-3xl font-extrabold text-white">3</span>
+                <span class="text-xs sm:text-sm text-slate-300">Independent Suites</span>
+              </div>
+              <div class="bg-white/10 backdrop-blur rounded-xl p-3 border border-white/10 text-center">
+                <span class="block text-2xl sm:text-3xl font-extrabold text-emerald-300">Continuous</span>
+                <span class="text-xs sm:text-sm text-slate-300">On-Demand Hot Water</span>
+              </div>
+              <div class="bg-white/10 backdrop-blur rounded-xl p-3 border border-white/10 text-center">
+                <span class="block text-2xl sm:text-3xl font-extrabold text-sky-300">100%</span>
+                <span class="text-xs sm:text-sm text-slate-300">Climate Controlled</span>
+              </div>
+            </div>
+
+            <!-- Action buttons -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+              <a href="#calculator" class="inline-flex items-center justify-center px-7 py-4 rounded-xl text-base font-bold text-brand-900 bg-white hover:bg-slate-100 shadow-xl transition transform hover:-translate-y-0.5">
+                <i data-lucide="calculator" class="w-5 h-5 mr-2 text-brand-600"></i>
+                Calculate Rental Estimate
+              </a>
+              <a href="#quote-form" class="inline-flex items-center justify-center px-7 py-4 rounded-xl text-base font-bold text-white bg-brand-500 hover:bg-brand-600 border border-brand-400/40 shadow-lg transition">
+                Check Availability
+              </a>
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="pt-4 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-slate-300">
+              <span class="flex items-center gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Turnkey Delivery & Leveling</span>
+              <span class="flex items-center gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> City & OSHA Standard Compliant</span>
+              <span class="flex items-center gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Generator / Water Tank Packages Available</span>
+            </div>
+          </div>
+
+          <!-- Hero Graphic / Unit Showcase Card -->
+          <div class="lg:col-span-5">
+            <div class="relative mx-auto rounded-3xl bg-slate-900/80 border border-white/15 p-5 shadow-2xl backdrop-blur-xl">
+              
+              <!-- Trailer Badge -->
+              <div class="absolute -top-3 right-6 bg-gradient-to-r from-emerald-500 to-teal-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow uppercase tracking-wider">
+                Full All-In-One Suites
+              </div>
+
+              <!-- Trailer SVG Diagram -->
+              <div class="bg-gradient-to-b from-slate-800 to-slate-900 rounded-2xl p-4 border border-slate-700/60 text-center">
+                <div class="text-xs uppercase font-bold text-brand-300 tracking-wider mb-2">Each Suite Floorplan</div>
+                
+                <!-- Schematic Layout representation -->
+                <div class="grid grid-cols-3 gap-2 py-3 bg-slate-950/60 rounded-xl p-3 border border-slate-800 text-xs">
+                  <!-- Suite 1 -->
+                  <div class="border border-brand-500/40 rounded-lg p-2.5 bg-brand-950/40 flex flex-col justify-between items-center text-center">
+                    <span class="font-bold text-sky-400 text-xs uppercase mb-1">Suite 1</span>
+                    <div class="space-y-1.5 my-2">
+                      <div class="p-1 rounded bg-slate-800/80 text-[11px] text-slate-200">🚿 Hot Shower</div>
+                      <div class="p-1 rounded bg-slate-800/80 text-[11px] text-slate-200">🚽 Commode</div>
+                      <div class="p-1 rounded bg-slate-800/80 text-[11px] text-slate-200">🪞 Sink/Vanity</div>
+                    </div>
+                    <span class="text-[10px] text-emerald-400 font-medium">Private Entry</span>
+                  </div>
+
+                  <!-- Suite 2 -->
+                  <div class="border border-brand-500/40 rounded-lg p-2.5 bg-brand-950/40 flex flex-col justify-between items-center text-center">
+                    <span class="font-bold text-sky-400 text-xs uppercase mb-1">Suite 2</span>
+                    <div class="space-y-1.5 my-2">
+                      <div class="p-1 rounded bg-slate-800/80 text-[11px] text-slate-200">🚿 Hot Shower</div>
+                      <div class="p-1 rounded bg-slate-800/80 text-[11px] text-slate-200">🚽 Commode</div>
+                      <div class="p-1 rounded bg-slate-800/80 text-[11px] text-slate-200">🪞 Sink/Vanity</div>
+                    </div>
+                    <span class="text-[10px] text-emerald-400 font-medium">Private Entry</span>
+                  </div>
+
+                  <!-- Suite 3 -->
+                  <div class="border border-brand-500/40 rounded-lg p-2.5 bg-brand-950/40 flex flex-col justify-between items-center text-center">
+                    <span class="font-bold text-sky-400 text-xs uppercase mb-1">Suite 3</span>
+                    <div class="space-y-1.5 my-2">
+                      <div class="p-1 rounded bg-slate-800/80 text-[11px] text-slate-200">🚿 Hot Shower</div>
+                      <div class="p-1 rounded bg-slate-800/80 text-[11px] text-slate-200">🚽 Commode</div>
+                      <div class="p-1 rounded bg-slate-800/80 text-[11px] text-slate-200">🪞 Sink/Vanity</div>
+                    </div>
+                    <span class="text-[10px] text-emerald-400 font-medium">Private Entry</span>
+                  </div>
+                </div>
+
+                <div class="mt-3 flex items-center justify-around text-xs text-slate-300 font-medium pt-2 border-t border-slate-800">
+                  <span class="flex items-center gap-1"><i data-lucide="snowflake" class="w-3.5 h-3.5 text-sky-400"></i> Individual AC</span>
+                  <span class="flex items-center gap-1"><i data-lucide="zap" class="w-3.5 h-3.5 text-amber-400"></i> Continuous Hot H₂O</span>
+                  <span class="flex items-center gap-1"><i data-lucide="lock" class="w-3.5 h-3.5 text-emerald-400"></i> Deadbolt Privacy</span>
+                </div>
+              </div>
+
+              <!-- Callout feature box -->
+              <div class="mt-4 p-4 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between">
+                <div>
+                  <div class="text-xs uppercase text-slate-400 font-bold">Standard Hookup or Standalone</div>
+                  <div class="text-sm font-semibold text-white">Works with Garden Hose or Onboard Water</div>
+                </div>
+                <a href="#suites" class="text-xs font-bold text-sky-400 hover:text-sky-300 inline-flex items-center">
+                  Specs <i data-lucide="chevron-right" class="w-3 h-3 ml-1"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST STATS STRIP -->
+    <section class="bg-white border-b border-slate-200 py-6">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div class="p-2">
+            <div class="text-2xl sm:text-3xl font-black text-slate-900">100%</div>
+            <div class="text-xs sm:text-sm font-medium text-slate-500 mt-1">Private Individual Suites</div>
+          </div>
+          <div class="p-2 border-l border-slate-100">
+            <div class="text-2xl sm:text-3xl font-black text-brand-600">24/7</div>
+            <div class="text-xs sm:text-sm font-medium text-slate-500 mt-1">DFW On-Call Support</div>
+          </div>
+          <div class="p-2 border-l border-slate-100">
+            <div class="text-2xl sm:text-3xl font-black text-slate-900">OSHA & City</div>
+            <div class="text-xs sm:text-sm font-medium text-slate-500 mt-1">Sanitation Compliant</div>
+          </div>
+          <div class="p-2 border-l border-slate-100">
+            <div class="text-2xl sm:text-3xl font-black text-emerald-600">Turnkey</div>
+            <div class="text-xs sm:text-sm font-medium text-slate-500 mt-1">We Deliver, Level & Hook Up</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE SUITE DETAILS & SPECIFICATIONS -->
+    <section id="suites" class="py-20 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-brand-700 bg-brand-100 mb-3">
+            Unit Architecture & Amenities
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            Three Complete, Self-Contained Private Suites
+          </h2>
+          <p class="text-base sm:text-lg text-slate-600 mt-3">
+            Unlike cramped combined restroom trailers, our unit offers three equal, mirror-image suites designed for complete guest comfort, dignity, and hygiene.
+          </p>
+        </div>
+
+        <!-- 3 In 1 Suite Highlights Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          
+          <!-- Card 1: Shower -->
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200/80 hover:shadow-md transition">
+            <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center mb-5">
+              <i data-lucide="shower-head" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-950 mb-2">Continuous Hot Shower</h3>
+            <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+              Equipped with heavy-duty commercial on-demand tankless water heating so guests never experience a cold shower, even during peak group usage.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2">
+              <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Full-height acrylic stall with non-slip floor</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Moisture-resistant shower curtains & shelves</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Dual-pressure water balance valve</li>
+            </ul>
+          </div>
+
+          <!-- Card 2: Commode -->
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200/80 hover:shadow-md transition">
+            <div class="w-12 h-12 rounded-xl bg-teal-100 text-teal-700 flex items-center justify-center mb-5">
+              <i data-lucide="sparkles" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-950 mb-2">True Porcelain Flushing Toilet</h3>
+            <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+              Real ceramic flush commodes provide an upscale, odor-free experience miles ahead of standard chemical porta-potties.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2">
+              <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Foot-pedal hands-free sanitary flush</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Integrated sealed odor barrier system</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Commercial jumbo dispenser & trash bin</li>
+            </ul>
+          </div>
+
+          <!-- Card 3: Vanity & Climate -->
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200/80 hover:shadow-md transition">
+            <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center mb-5">
+              <i data-lucide="thermometer-sun" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-950 mb-2">Vanity & Texas Climate Control</h3>
+            <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+              Dallas heat or winter cold snaps are no match. High-BTU roof-mounted air conditioning with supplemental heat strips keep each stall at the optimal temperature.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2">
+              <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Solid surface vanity with LED lighted mirror</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Power GFCI outlets for shavers / dryers</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Powered rooftop exhaust ventilation in each suite</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Technical Hookup & Dimensions Grid -->
+        <div class="bg-slate-900 text-white rounded-3xl p-8 lg:p-12 shadow-xl">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-6 mb-8">
+            <div>
+              <span class="text-emerald-400 font-bold uppercase tracking-wider text-xs">Site Prep & Requirements</span>
+              <h3 class="text-2xl font-bold text-white mt-1">Utility & Footprint Specifications</h3>
+            </div>
+            <div class="text-xs bg-slate-800 text-slate-300 px-3.5 py-2 rounded-lg border border-slate-700">
+              No hookups on site? <strong>Ask for our self-contained generator & water tank package.</strong>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-sm">
+            <div class="space-y-2">
+              <div class="text-brand-400 font-semibold flex items-center gap-2">
+                <i data-lucide="zap" class="w-4 h-4"></i> Electrical
+              </div>
+              <p class="text-slate-300 text-xs leading-relaxed">
+                Requires standard <strong>30-Amp 110/120V</strong> service (or two dedicated 20-Amp circuits). We can provide quiet inverter generators on request.
+              </p>
+            </div>
+
+            <div class="space-y-2">
+              <div class="text-sky-400 font-semibold flex items-center gap-2">
+                <i data-lucide="waves" class="w-4 h-4"></i> Water Source
+              </div>
+              <p class="text-slate-300 text-xs leading-relaxed">
+                Connects to standard <strong>3/4" garden hose spigot</strong> with minimum 40 PSI pressure. Standalone on-site water supply tanks available.
+              </p>
+            </div>
+
+            <div class="space-y-2">
+              <div class="text-emerald-400 font-semibold flex items-center gap-2">
+                <i data-lucide="archive" class="w-4 h-4"></i> Waste Management
+              </div>
+              <p class="text-slate-300 text-xs leading-relaxed">
+                Large capacity onboard holding tanks or direct connection to sanitary sewer cleanout. Routine pumping included for multi-day rentals.
+              </p>
+            </div>
+
+            <div class="space-y-2">
+              <div class="text-amber-400 font-semibold flex items-center gap-2">
+                <i data-lucide="maximize" class="w-4 h-4"></i> Footprint Size
+              </div>
+              <p class="text-slate-300 text-xs leading-relaxed">
+                Requires approx. <strong>24 ft Length x 12 ft Width</strong> including the tongue and drop-down stairs. Needs firm, level ground.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MARKETS SERVED TABS / USE CASES -->
+    <section id="use-cases" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-accent-600 bg-teal-50 mb-2">
+            Target Industries & Occasions
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            Tailored For Events, Worksites & Productions
+          </h2>
+          <p class="text-base sm:text-lg text-slate-600 mt-2">
+            Whether impressing VIP festival guests or giving industrial turnaround crews an essential end-of-shift washdown.
+          </p>
+        </div>
+
+        <!-- Interactive Sector Filter / Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Sector 1: Special Events -->
+          <div class="border border-slate-200 rounded-2xl overflow-hidden hover:border-brand-500 hover:shadow-lg transition flex flex-col justify-between">
+            <div class="p-6 sm:p-8">
+              <div class="w-12 h-12 rounded-xl bg-pink-100 text-pink-700 flex items-center justify-center mb-6">
+                <i data-lucide="party-popper" class="w-6 h-6"></i>
+              </div>
+              <span class="text-xs font-bold uppercase tracking-wider text-pink-600">Weddings & Hospitality</span>
+              <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">Outdoor Festivals & VIP Events</h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                Perfect for ranch weddings in McKinney, equestrian races in Fort Worth, sporting tournaments, or multi-day glamping festivals. Guests can refresh, shower, and dress in air-conditioned privacy.
+              </p>
+              <ul class="text-xs text-slate-600 space-y-2">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-pink-600"></i> Bridal party prep & refresh suites</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-pink-600"></i> Tasteful exterior presentation & lighting</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-pink-600"></i> Attendant staffing available</li>
+              </ul>
+            </div>
+            <div class="bg-slate-50 px-6 py-4 border-t border-slate-100">
+              <a href="#calculator" onclick="setCalculatorDefaults('event')" class="text-xs font-bold text-brand-600 hover:text-brand-800 flex items-center justify-between">
+                Estimate Event Pricing <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Sector 2: Construction & Industrial -->
+          <div class="border border-slate-200 rounded-2xl overflow-hidden hover:border-brand-500 hover:shadow-lg transition flex flex-col justify-between">
+            <div class="p-6 sm:p-8">
+              <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center mb-6">
+                <i data-lucide="hard-hat" class="w-6 h-6"></i>
+              </div>
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Compliance & Industrial</span>
+              <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">Construction & Infrastructure</h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                Keep tradespeople safe and OSHA compliant during hazmat abatement, hot Texas summer shifts, utility shutdowns, and turnaround operations. Durable, high-capacity, and easy to sanitize.
+              </p>
+              <ul class="text-xs text-slate-600 space-y-2">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Weekly or monthly discounted leases</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Scheduled pump & restock service contracts</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Safety handrails and anti-slip deck treads</li>
+              </ul>
+            </div>
+            <div class="bg-slate-50 px-6 py-4 border-t border-slate-100">
+              <a href="#calculator" onclick="setCalculatorDefaults('construction')" class="text-xs font-bold text-brand-600 hover:text-brand-800 flex items-center justify-between">
+                Estimate Jobsite Pricing <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Sector 3: Film, Commercial & Disaster -->
+          <div class="border border-slate-200 rounded-2xl overflow-hidden hover:border-brand-500 hover:shadow-lg transition flex flex-col justify-between">
+            <div class="p-6 sm:p-8">
+              <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center mb-6">
+                <i data-lucide="clapperboard" class="w-6 h-6"></i>
+              </div>
+              <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Productions & Emergency</span>
+              <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">Film Shoots & Emergency Relief</h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                Reliable hygiene infrastructure for film crews on location across North Texas, insurance temporary housing replacements, and municipal emergency relief stations during severe storm outages.
+              </p>
+              <ul class="text-xs text-slate-600 space-y-2">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-600"></i> Rapid dispatch throughout Dallas County & Collin County</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-600"></i> Silent run generator setups available</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-600"></i> Net-30 invoicing for qualified companies</li>
+              </ul>
+            </div>
+            <div class="bg-slate-50 px-6 py-4 border-t border-slate-100">
+              <a href="#calculator" onclick="setCalculatorDefaults('film')" class="text-xs font-bold text-brand-600 hover:text-brand-800 flex items-center justify-between">
+                Estimate Production Rates <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INTERACTIVE INSTANT ESTIMATOR / CALCULATOR WIDGET -->
+    <section id="calculator" class="py-20 bg-slate-100 border-y border-slate-200">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-brand-700 bg-brand-100 mb-2">
+            Transparent DFW Pricing
+          </span>
+          <h2 class="text-3xl font-extrabold text-slate-900">
+            Instant Rental Price Estimator
+          </h2>
+          <p class="text-sm text-slate-600 mt-1">
+            Configure your event type and duration to see an instant estimated investment.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-12">
+            
+            <!-- Controls (Left 7 Cols) -->
+            <div class="p-6 sm:p-8 lg:col-span-7 space-y-6">
+              
+              <!-- Option 1: Use Type -->
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">1. Select Rental Type</label>
+                <div class="grid grid-cols-3 gap-2.5">
+                  <button type="button" onclick="setUseType('event', this)" class="use-type-btn border-2 border-brand-600 bg-brand-50 text-brand-900 rounded-xl p-3 text-xs sm:text-sm font-bold text-center transition">
+                    Event / Wedding
+                  </button>
+                  <button type="button" onclick="setUseType('commercial', this)" class="use-type-btn border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 rounded-xl p-3 text-xs sm:text-sm font-semibold text-center transition">
+                    Construction
+                  </button>
+                  <button type="button" onclick="setUseType('film', this)" class="use-type-btn border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 rounded-xl p-3 text-xs sm:text-sm font-semibold text-center transition">
+                    Film / Relief
+                  </button>
+                </div>
+              </div>
+
+              <!-- Option 2: Duration -->
+              <div>
+                <div class="flex justify-between items-center mb-2">
+                  <label class="text-xs font-bold uppercase tracking-wider text-slate-700">2. Duration</label>
+                  <span id="durationDisplay" class="text-xs font-bold text-brand-600 bg-brand-50 px-2 py-0.5 rounded">Weekend (1-3 Days)</span>
+                </div>
+                <div class="grid grid-cols-4 gap-2">
+                  <button type="button" onclick="setDuration('weekend', this)" class="dur-btn border-2 border-brand-600 bg-brand-50 text-brand-900 rounded-xl py-2.5 text-xs font-bold text-center">
+                    Weekend
+                  </button>
+                  <button type="button" onclick="setDuration('1week', this)" class="dur-btn border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 rounded-xl py-2.5 text-xs font-semibold text-center">
+                    1 Week
+                  </button>
+                  <button type="button" onclick="setDuration('2weeks', this)" class="dur-btn border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 rounded-xl py-2.5 text-xs font-semibold text-center">
+                    2 Weeks
+                  </button>
+                  <button type="button" onclick="setDuration('1month', this)" class="dur-btn border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 rounded-xl py-2.5 text-xs font-semibold text-center">
+                    1 Month+
+                  </button>
+                </div>
+              </div>
+
+              <!-- Option 3: Utilities Package -->
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">3. Site Utility Hookup Readiness</label>
+                <div class="space-y-2">
+                  <label class="flex items-start gap-3 p-3 rounded-xl border border-slate-200 cursor-pointer hover:bg-slate-50 transition">
+                    <input type="radio" name="utility_option" value="standard" checked onchange="updateCalculations()" class="mt-1 text-brand-600 focus:ring-brand-500">
+                    <div>
+                      <span class="block text-sm font-bold text-slate-800">Standard On-Site Hookups (Client Supplies)</span>
+                      <span class="block text-xs text-slate-500">You have a standard 30A power plug and standard 3/4" garden hose spigot available on site.</span>
+                    </div>
+                  </label>
+
+                  <label class="flex items-start gap-3 p-3 rounded-xl border border-slate-200 cursor-pointer hover:bg-slate-50 transition">
+                    <input type="radio" name="utility_option" value="offgrid" onchange="updateCalculations()" class="mt-1 text-brand-600 focus:ring-brand-500">
+                    <div>
+                      <span class="block text-sm font-bold text-slate-800">Off-Grid Self-Contained Package (+$350 - $650)</span>
+                      <span class="block text-xs text-slate-500">Includes quiet commercial generator + auxiliary potable fresh water tanks.</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Option 4: Service Cleaning Schedule -->
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">4. Daily Attendant or Mid-Event Cleanout</label>
+                <label class="flex items-center gap-3 p-3 rounded-xl border border-slate-200 cursor-pointer hover:bg-slate-50">
+                  <input type="checkbox" id="addAttendant" onchange="updateCalculations()" class="w-4 h-4 rounded text-brand-600 focus:ring-brand-500">
+                  <div>
+                    <span class="text-sm font-semibold text-slate-800">Add Mid-Event Restock & Refresh Service (+$250)</span>
+                    <span class="block text-xs text-slate-500">Recommended for high-traffic events over 150 guests.</span>
+                  </div>
+                </label>
+              </div>
+
+            </div>
+
+            <!-- Price Output Card (Right 5 Cols) -->
+            <div class="bg-gradient-to-br from-slate-900 to-brand-950 p-6 sm:p-8 lg:col-span-5 text-white flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-slate-800">
+              <div>
+                <span class="inline-block px-2.5 py-1 rounded bg-white/10 text-brand-200 text-xs font-semibold uppercase tracking-wider mb-4">
+                  Ballpark Rental Estimate
+                </span>
+
+                <div class="flex items-baseline gap-2">
+                  <span id="priceDisplay" class="text-4xl sm:text-5xl font-black text-white">$1,650</span>
+                  <span id="unitTerm" class="text-slate-400 text-xs">/ weekend event</span>
+                </div>
+                <p class="text-xs text-slate-300 mt-2">
+                  Includes full setup, leveling, hot-water testing, and standard DFW delivery radius (up to 40 miles from central Dallas).
+                </p>
+
+                <hr class="border-white/10 my-6">
+
+                <!-- Summary itemized list -->
+                <div class="space-y-2.5 text-xs text-slate-300">
+                  <div class="flex justify-between">
+                    <span>Trailer:</span>
+                    <span class="font-medium text-white">3 Luxury Suites (Showers+Commodes)</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>Setup & Teardown:</span>
+                    <span class="font-medium text-emerald-400">Included</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>Delivery within Metroplex:</span>
+                    <span class="font-medium text-white" id="summaryDelivery">Included (DFW Core)</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>Utility Mode:</span>
+                    <span class="font-medium text-white" id="summaryUtility">Client Hookups</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-6">
+                <button onclick="transferToBookingForm()" class="w-full py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 font-bold text-white shadow-lg shadow-emerald-500/20 transition transform active:scale-95 flex items-center justify-center gap-2 text-sm">
+                  <i data-lucide="calendar-check" class="w-4 h-4"></i> Lock In These Dates & Quote
+                </button>
+                <p class="text-center text-[11px] text-slate-400 mt-2">
+                  Zero obligation. We confirm availability within 2 business hours.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LEAD INQUIRY & BOOKING FORM -->
+    <section id="quote-form" class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-10">
+          <span class="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-brand-700 bg-brand-50 mb-2">
+            DFW Direct Reservations
+          </span>
+          <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">
+            Request Unit Availability & Official Contract
+          </h2>
+          <p class="text-sm text-slate-600 mt-2">
+            Tell us about your event or jobsite location. We guarantee rapid responses during regular business hours.
+          </p>
+        </div>
+
+        <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-sm">
+          <form id="rentalInquiryForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label for="fullName" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Your Name *</label>
+                <input type="text" id="fullName" required placeholder="e.g. John Doe / Sarah Jenkins" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-sm bg-white outline-none">
+              </div>
+
+              <div>
+                <label for="companyName" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Company / Organization / Couple</label>
+                <input type="text" id="companyName" placeholder="e.g. Acme Construction / Jenkins Wedding" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-sm bg-white outline-none">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label for="phone" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Phone Number *</label>
+                <input type="tel" id="phone" required placeholder="(214) 555-0199" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-sm bg-white outline-none">
+              </div>
+
+              <div>
+                <label for="email" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Email Address *</label>
+                <input type="email" id="email" required placeholder="contact@example.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-sm bg-white outline-none">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+              <div class="sm:col-span-2">
+                <label for="deliveryAddress" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Delivery City or Street Address (DFW Area) *</label>
+                <input type="text" id="deliveryAddress" required placeholder="e.g. 1400 Main St, Frisco, TX or Dallas Ranch venue" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-sm bg-white outline-none">
+              </div>
+
+              <div>
+                <label for="rentalTypeSelect" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Rental Purpose</label>
+                <select id="rentalTypeSelect" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-sm bg-white outline-none">
+                  <option value="Event / Wedding">Wedding / Festival</option>
+                  <option value="Commercial Construction">Construction / Jobsite</option>
+                  <option value="Industrial Outage">Industrial / Turnaround</option>
+                  <option value="Film Production">Film / Production Crew</option>
+                  <option value="Disaster Relief">Disaster / Emergency</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label for="startDate" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Requested Start Date *</label>
+                <input type="date" id="startDate" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-sm bg-white outline-none">
+              </div>
+
+              <div>
+                <label for="endDate" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Requested End Date *</label>
+                <input type="date" id="endDate" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-sm bg-white outline-none">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Water & Power Available on Site?</label>
+                <select id="utilitiesSelect" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-sm bg-white outline-none">
+                  <option value="Yes - Full Hookups">Yes (We have 30A electrical & 3/4" water)</option>
+                  <option value="No - Need Generator & Water">No (Need generator + auxiliary water)</option>
+                  <option value="Unsure">Unsure (Requesting site survey advice)</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="estimatedUsers" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Estimated Daily Users</label>
+                <input type="text" id="estimatedUsers" placeholder="e.g. 50 workers or 175 wedding guests" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-sm bg-white outline-none">
+              </div>
+            </div>
+
+            <div>
+              <label for="specialNotes" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Additional Project Details or Gate Access Instructions</label>
+              <textarea id="specialNotes" rows="3" placeholder="Tell us about entry gates, surface type (grass, pavement, gravel), or specific setup timing..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-sm bg-white outline-none"></textarea>
+            </div>
+
+            <!-- Pre-estimated quote note -->
+            <div id="calculatorTransferNotice" class="hidden p-3 rounded-xl bg-brand-50 border border-brand-200 text-xs text-brand-900 flex items-center gap-2">
+              <i data-lucide="info" class="w-4 h-4 text-brand-600"></i>
+              <span>Calculated estimate attached: <strong id="attachedQuoteText">$1,650</strong></span>
+            </div>
+
+            <button type="submit" class="w-full py-4 rounded-xl text-base font-bold text-white bg-brand-600 hover:bg-brand-700 shadow-md shadow-brand-600/30 transition transform hover:-translate-y-0.5">
+              Submit Reservation Request
+            </button>
+            <p class="text-center text-xs text-slate-500">
+              🔒 We respect your privacy. No spam. You will receive an itemized proposal via email.
+            </p>
+          </form>
+
+          <!-- Success Alert Message Box (Hidden initially) -->
+          <div id="formSuccessModal" class="hidden mt-6 p-6 rounded-2xl bg-emerald-50 border border-emerald-200 text-center space-y-3">
+            <div class="w-12 h-12 bg-emerald-500 text-white rounded-full flex items-center justify-center mx-auto">
+              <i data-lucide="check" class="w-6 h-6"></i>
+            </div>
+            <h4 class="text-xl font-bold text-emerald-950">Inquiry Received!</h4>
+            <p class="text-sm text-emerald-800 max-w-md mx-auto">
+              Thank you! Our Dallas logistics coordinator is reviewing your dates and requested site specs. We will follow up with confirmation and contract details shortly.
+            </p>
+            <button onclick="document.getElementById('formSuccessModal').classList.add('hidden')" class="px-5 py-2 text-xs font-bold text-emerald-900 bg-emerald-200 hover:bg-emerald-300 rounded-lg">
+              Dismiss
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS -->
+    <section id="faq" class="py-20 bg-slate-50 border-t border-slate-200">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-12">
+          <span class="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-brand-700 bg-brand-100 mb-2">
+            Got Questions?
+          </span>
+          <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-sm text-slate-600 mt-2">
+            Everything you need to know about delivery footprint, utility connections, and servicing.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          
+          <!-- FAQ 1 -->
+          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+            <button onclick="toggleFaq('faq1')" class="w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50 transition text-sm sm:text-base">
+              <span>What utilities are required to operate the shower trailer?</span>
+              <i id="faq1-icon" data-lucide="chevron-down" class="w-5 h-5 text-slate-500 transition-transform"></i>
+            </button>
+            <div id="faq1" class="hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 border-t border-slate-100 pt-3 leading-relaxed">
+              The trailer requires two items for standard operation:
+              <br><br>
+              <strong>1. Electricity:</strong> One 30-amp 110V/120V dedicated circuit (or two separate 20-amp circuits) to run the air conditioning, hot water heating elements, and vanity lighting.
+              <br>
+              <strong>2. Water Supply:</strong> A standard outdoor water hose connection (3/4" garden spigot) providing at least 40–50 PSI.
+              <br><br>
+              If your location is primitive or lacks power and water, we offer complete off-grid power generator packages and auxiliary fresh water tanks.
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+            <button onclick="toggleFaq('faq2')" class="w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50 transition text-sm sm:text-base">
+              <span>How does waste disposal and black/grey water work?</span>
+              <i id="faq2-icon" data-lucide="chevron-down" class="w-5 h-5 text-slate-500 transition-transform"></i>
+            </button>
+            <div id="faq2" class="hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 border-t border-slate-100 pt-3 leading-relaxed">
+              The unit features massive commercial holding tanks designed to handle hundreds of showers and flushes. If your site has a sewer cleanout or dump station, we can hook up directly with standard camlock drain hoses. For multi-day or long-term industrial rentals, we schedule periodic vacuum pumping service so you never have to worry about overflow.
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+            <button onclick="toggleFaq('faq3')" class="w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50 transition text-sm sm:text-base">
+              <span>How large is the delivery footprint?</span>
+              <i id="faq3-icon" data-lucide="chevron-down" class="w-5 h-5 text-slate-500 transition-transform"></i>
+            </button>
+            <div id="faq3" class="hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 border-t border-slate-100 pt-3 leading-relaxed">
+              The trailer is approximately 20 feet long (24 feet including the hitch tongue) and 8.5 feet wide. When the fold-down aluminum entrance steps and handrails are extended, you will need approximately 12 feet of total width clearance. We require a level parking area (concrete, asphalt, hard-packed gravel, or firm dry grass).
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+            <button onclick="toggleFaq('faq4')" class="w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50 transition text-sm sm:text-base">
+              <span>How hot is the water and how long can showers last?</span>
+              <i id="faq4-icon" data-lucide="chevron-down" class="w-5 h-5 text-slate-500 transition-transform"></i>
+            </button>
+            <div id="faq4" class="hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 border-t border-slate-100 pt-3 leading-relaxed">
+              Our trailer utilizes state-of-the-art continuous, on-demand commercial water heaters. Unlike conventional 30-gallon tank water heaters that go cold after 3 or 4 showers, our units generate steady hot water indefinitely as long as water and fuel/power are supplied.
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+            <button onclick="toggleFaq('faq5')" class="w-full px-6 py-4 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50 transition text-sm sm:text-base">
+              <span>Do you deliver anywhere in the DFW Metroplex?</span>
+              <i id="faq5-icon" data-lucide="chevron-down" class="w-5 h-5 text-slate-500 transition-transform"></i>
+            </button>
+            <div id="faq5" class="hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 border-t border-slate-100 pt-3 leading-relaxed">
+              Yes! We regularly deliver and set up throughout Dallas County, Tarrant County, Collin County, and Denton County. This includes Dallas, Fort Worth, Frisco, Plano, McKinney, Arlington, Irving, Denton, Grapevine, and surrounding North Texas communities. Deliveries beyond a 45-mile radius from Dallas can be arranged with a modest mileage surcharge.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICE AREA MAP & CONTACT DIRECTORY -->
+    <section id="service-area" class="py-16 bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-5 space-y-4">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-600">DFW Coverage Hub</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
+              Serving the Entire Dallas-Fort Worth Metroplex
+            </h2>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Our fleet is based centrally in North Texas, allowing quick deployment for scheduled weddings, industrial turnarounds, and last-minute emergency needs.
+            </p>
+
+            <div class="grid grid-cols-2 gap-2 text-xs font-semibold text-slate-700 pt-2">
+              <div class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-500"></i> Dallas & Highland Park</div>
+              <div class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-500"></i> Fort Worth & Arlington</div>
+              <div class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-500"></i> Frisco & Plano</div>
+              <div class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-500"></i> McKinney & Allen</div>
+              <div class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-500"></i> Denton & Lewisville</div>
+              <div class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-500"></i> Irving, Grapevine & Southlake</div>
+            </div>
+
+            <div class="pt-4 flex items-center gap-4">
+              <a href="tel:2145557469" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-900 text-white font-bold text-xs hover:bg-slate-800 transition">
+                <i data-lucide="phone" class="w-4 h-4 text-emerald-400"></i> (214) 555-SHOW
+              </a>
+              <a href="#quote-form" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-slate-300 text-slate-800 font-bold text-xs hover:bg-slate-50 transition">
+                Check Date Availability
+              </a>
+            </div>
+          </div>
+
+          <!-- Stylized DFW Region Interactive Badge / Card -->
+          <div class="lg:col-span-7 bg-slate-900 rounded-3xl p-6 sm:p-8 text-white relative overflow-hidden shadow-xl">
+            <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-brand-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-6">
+              <div>
+                <h4 class="font-bold text-white text-base">North Texas Deployment Hub</h4>
+                <p class="text-xs text-slate-400">Standard 45-Mile No-Fee Dispatch Circle</p>
+              </div>
+              <span class="px-2.5 py-1 rounded bg-emerald-500/20 text-emerald-300 text-xs font-semibold border border-emerald-500/30">
+                Active Fleet
+              </span>
+            </div>
+
+            <!-- Regional City Chips Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs mb-6">
+              <div class="p-3 rounded-xl bg-slate-800/60 border border-slate-700/60">
+                <div class="font-bold text-white">Dallas County</div>
+                <div class="text-[11px] text-slate-400 mt-0.5">Dallas, Irving, Garland, Mesquite</div>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-800/60 border border-slate-700/60">
+                <div class="font-bold text-white">Collin County</div>
+                <div class="text-[11px] text-slate-400 mt-0.5">Frisco, Plano, McKinney, Prosper</div>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-800/60 border border-slate-700/60">
+                <div class="font-bold text-white">Tarrant County</div>
+                <div class="text-[11px] text-slate-400 mt-0.5">Fort Worth, Arlington, Grapevine</div>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-800/60 border border-slate-700/60">
+                <div class="font-bold text-white">Denton County</div>
+                <div class="text-[11px] text-slate-400 mt-0.5">Denton, Lewisville, Flower Mound</div>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-800/60 border border-slate-700/60">
+                <div class="font-bold text-white">Rockwall County</div>
+                <div class="text-[11px] text-slate-400 mt-0.5">Rockwall, Heath, Royse City</div>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-800/60 border border-slate-700/60">
+                <div class="font-bold text-white">Extended Reach</div>
+                <div class="text-[11px] text-slate-400 mt-0.5">Waxahachie, Weatherford & Beyond</div>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-brand-900/40 border border-brand-700/40 flex items-center gap-3">
+              <i data-lucide="truck" class="w-6 h-6 text-brand-300 flex-shrink-0"></i>
+              <div class="text-xs text-slate-300">
+                <strong class="text-white">Need multi-unit or custom site delivery?</strong> Contact our operations team directly for enterprise vendor agreements and multi-week contracts.
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        
+        <!-- Col 1: About -->
+        <div class="space-y-3 md:col-span-1">
+          <div class="flex items-center gap-2 text-white font-black text-base">
+            <div class="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center text-white">
+              <i data-lucide="droplet" class="w-4 h-4"></i>
+            </div>
+            TQM MOBILE SUITES
+          </div>
+          <p class="text-slate-400 leading-relaxed">
+            Dallas-Fort Worth's premier provider of 3-suite luxury mobile shower and flushing restroom trailers.
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <div class="text-white font-bold mb-3 uppercase tracking-wider text-[11px]">Trailer Features</div>
+          <ul class="space-y-2">
+            <li><a href="#suites" class="hover:text-white transition">Continuous Hot Water</a></li>
+            <li><a href="#suites" class="hover:text-white transition">Dual AC & Heat Climate Control</a></li>
+            <li><a href="#suites" class="hover:text-white transition">Porcelain Foot-Flush Toilets</a></li>
+            <li><a href="#suites" class="hover:text-white transition">Solid Surface Vanities & Mirrors</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Sectors -->
+        <div>
+          <div class="text-white font-bold mb-3 uppercase tracking-wider text-[11px]">Primary Markets</div>
+          <ul class="space-y-2">
+            <li><a href="#use-cases" class="hover:text-white transition">Outdoor Weddings & Receptions</a></li>
+            <li><a href="#use-cases" class="hover:text-white transition">Commercial Construction Sites</a></li>
+            <li><a href="#use-cases" class="hover:text-white transition">Industrial Plant Turnarounds</a></li>
+            <li><a href="#use-cases" class="hover:text-white transition">Film & Television Productions</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact -->
+        <div>
+          <div class="text-white font-bold mb-3 uppercase tracking-wider text-[11px]">Direct Dispatch</div>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2"><i data-lucide="phone" class="w-3.5 h-3.5 text-brand-400"></i> (214) 555-SHOW (7469)</li>
+            <li class="flex items-center gap-2"><i data-lucide="mail" class="w-3.5 h-3.5 text-brand-400"></i> rentals@tqmmobilesuites.com</li>
+            <li class="flex items-center gap-2"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-400"></i> Dallas / Fort Worth, Texas</li>
+            <li class="flex items-center gap-2"><i data-lucide="clock" class="w-3.5 h-3.5 text-brand-400"></i> 7 Days / 24hr Emergency Line</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-slate-900 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] text-slate-400">
+        <p>&copy; <span id="currentYear"></span> TQM Mobile Suites LLC. All rights reserved. Locally Owned & Operated in North Texas.</p>
+        <div class="flex items-center gap-4">
+          <a href="#" class="hover:text-white">Rental Terms & Conditions</a>
+          <span>&bull;</span>
+          <a href="#" class="hover:text-white">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="#" class="hover:text-white">Certificate of Insurance (COI)</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Current year stamp
+    document.getElementById('currentYear').innerText = new Date().getFullYear();
+
+    // Mobile navigation toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu upon clicking links
+    document.querySelectorAll('#mobileMenu a').forEach(item => {
+      item.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // --- ESTIMATOR CALCULATOR LOGIC ---
+    let currentUseType = 'event';
+    let currentDuration = 'weekend';
+
+    const basePricing = {
+      event: {
+        weekend: 1650,
+        '1week': 2650,
+        '2weeks': 4200,
+        '1month': 6400
+      },
+      commercial: {
+        weekend: 1450,
+        '1week': 2250,
+        '2weeks': 3750,
+        '1month': 5500
+      },
+      film: {
+        weekend: 1750,
+        '1week': 2850,
+        '2weeks': 4500,
+        '1month': 6900
+      }
+    };
+
+    function setUseType(type, btnElement) {
+      currentUseType = type;
+      // Update UI button highlights
+      document.querySelectorAll('.use-type-btn').forEach(btn => {
+        btn.classList.remove('border-2', 'border-brand-600', 'bg-brand-50', 'text-brand-900', 'font-bold');
+        btn.classList.add('border', 'border-slate-200', 'bg-white', 'text-slate-700', 'font-semibold');
+      });
+      btnElement.classList.add('border-2', 'border-brand-600', 'bg-brand-50', 'text-brand-900', 'font-bold');
+      btnElement.classList.remove('border-slate-200', 'bg-white', 'text-slate-700', 'font-semibold');
+
+      // Update sync to booking dropdown
+      const select = document.getElementById('rentalTypeSelect');
+      if (type === 'event') select.value = 'Event / Wedding';
+      if (type === 'commercial') select.value = 'Commercial Construction';
+      if (type === 'film') select.value = 'Film Production';
+
+      updateCalculations();
+    }
+
+    function setDuration(dur, btnElement) {
+      currentDuration = dur;
+      // Update UI button highlights
+      document.querySelectorAll('.dur-btn').forEach(btn => {
+        btn.classList.remove('border-2', 'border-brand-600', 'bg-brand-50', 'text-brand-900', 'font-bold');
+        btn.classList.add('border', 'border-slate-200', 'bg-white', 'text-slate-700', 'font-semibold');
+      });
+      btnElement.classList.add('border-2', 'border-brand-600', 'bg-brand-50', 'text-brand-900', 'font-bold');
+      btnElement.classList.remove('border-slate-200', 'bg-white', 'text-slate-700', 'font-semibold');
+
+      const labels = {
+        weekend: 'Weekend (1-3 Days)',
+        '1week': '1 Full Week (7 Days)',
+        '2weeks': '2 Weeks (14 Days)',
+        '1month': 'Monthly Contract (30+ Days)'
+      };
+      document.getElementById('durationDisplay').innerText = labels[dur];
+      updateCalculations();
+    }
+
+    function updateCalculations() {
+      let base = basePricing[currentUseType][currentDuration] || 1650;
+
+      // Utilities check
+      const utilityChoice = document.querySelector('input[name="utility_option"]:checked').value;
+      const summaryUtility = document.getElementById('summaryUtility');
+
+      let utilitySurcharge = 0;
+      if (utilityChoice === 'offgrid') {
+        utilitySurcharge = currentDuration === 'weekend' ? 400 : (currentDuration === '1week' ? 650 : 1200);
+        summaryUtility.innerText = 'Generator + Water Pack (+$' + utilitySurcharge + ')';
+      } else {
+        summaryUtility.innerText = 'Client Hookups (No Extra)';
+      }
+
+      // Attendant / Mid-clean add-on
+      const hasAttendant = document.getElementById('addAttendant').checked;
+      let attendantCost = hasAttendant ? 250 : 0;
+
+      let total = base + utilitySurcharge + attendantCost;
+
+      // Update price display
+      document.getElementById('priceDisplay').innerText = '$' + total.toLocaleString();
+
+      const termLabels = {
+        weekend: '/ weekend event',
+        '1week': '/ full week',
+        '2weeks': '/ two weeks',
+        '1month': '/ monthly lease'
+      };
+      document.getElementById('unitTerm').innerText = termLabels[currentDuration];
+    }
+
+    // Set defaults from target cards
+    function setCalculatorDefaults(type) {
+      const targetBtn = document.querySelector(`button[onclick*="'${type}'"]`);
+      if (targetBtn) {
+        setUseType(type, targetBtn);
+      }
+      document.getElementById('calculator').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Transfer estimated calculation to booking form
+    function transferToBookingForm() {
+      const priceText = document.getElementById('priceDisplay').innerText;
+      const termText = document.getElementById('unitTerm').innerText;
+      
+      const notice = document.getElementById('calculatorTransferNotice');
+      const attachedQuoteText = document.getElementById('attachedQuoteText');
+      
+      attachedQuoteText.innerText = `${priceText} (${termText.replace('/', '').trim()})`;
+      notice.classList.remove('hidden');
+
+      // Sync utilities radio to form select
+      const utilityChoice = document.querySelector('input[name="utility_option"]:checked').value;
+      const utilitiesSelect = document.getElementById('utilitiesSelect');
+      if (utilityChoice === 'offgrid') {
+        utilitiesSelect.value = 'No - Need Generator & Water';
+      } else {
+        utilitiesSelect.value = 'Yes - Full Hookups';
+      }
+
+      document.getElementById('quote-form').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Handle Form Submit
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      
+      // Show confirmation banner
+      const successModal = document.getElementById('formSuccessModal');
+      successModal.classList.remove('hidden');
+      successModal.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+      // Reset form
+      document.getElementById('rentalInquiryForm').reset();
+    }
+
+    // Accordion FAQ Toggle
+    function toggleFaq(id) {
+      const content = document.getElementById(id);
+      const icon = document.getElementById(id + '-icon');
+      const isHidden = content.classList.contains('hidden');
+
+      // Close other FAQs
+      ['faq1', 'faq2', 'faq3', 'faq4', 'faq5'].forEach(item => {
+        const otherEl = document.getElementById(item);
+        const otherIcon = document.getElementById(item + '-icon');
+        if (otherEl && otherEl !== content) {
+          otherEl.classList.add('hidden');
+          if (otherIcon) otherIcon.classList.remove('rotate-180');
+        }
+      });
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      } else {
+        content.classList.add('hidden');
+        icon.classList.remove('rotate-180');
+      }
+    }
+  </script>
+</body>
+</html>
